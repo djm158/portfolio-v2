@@ -3,10 +3,6 @@ import React from "react";
 export default function Index() {
   return (
     <>
-      {/* <SEO
-        title="Daniel McGrath | Portfolio"
-        keywords={[`developer`, `software`, `engineer`]}
-      /> */}
       <div data-sal="slide-up" data-sal-easing="ease" data-sal-duration="400">
         <h1>Hello!</h1>
         <p>I&apos;m Dan.</p>
