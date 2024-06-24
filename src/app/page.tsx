@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Index() {
   return (
-    <>
-      <div data-sal="slide-up" data-sal-easing="ease" data-sal-duration="400">
-        <h1>Hello!</h1>
+    <main className="p-12">
+      <h1 className="text-4xl mb-4">Hello!</h1>
+      <div className="*:text-lg *:mb-3">
         <p>I&apos;m Dan.</p>
         <p>
           I&apos;m a full stack developer at{" "}
@@ -21,6 +21,6 @@ export default function Index() {
           my work!
         </p>
       </div>
-    </>
+    </main>
   );
 }

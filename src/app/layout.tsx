@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,14 +10,43 @@ export const metadata: Metadata = {
   description: "Daniel McGrath's personal website",
 };
 
+const SidebarLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: ReactNode;
+}) => {
+  return (
+    <a href={href} className="p-4 w-100 w-32 text-xl">
+      {children}
+    </a>
+  );
+};
+
+const Sidebar = () => {
+  return (
+    <div className="fixed top-0 left-0 h-full w-60 bg-gray-light p-4 hidden sm:block">
+      <nav className="flex flex-col p-4 items-center">
+        <SidebarLink href="/">Home</SidebarLink>
+        <SidebarLink href="/projects">Projects</SidebarLink>
+        <SidebarLink href="/blog">Blog</SidebarLink>
+        <SidebarLink href="/about">About</SidebarLink>
+        <SidebarLink href="/contact">Contact</SidebarLink>
+      </nav>
+    </div>
+  );
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <body className={inter.className}>
+      <Sidebar />
+      <div className="sm:ml-64">{children}</div>
+    </body>
   );
 }
