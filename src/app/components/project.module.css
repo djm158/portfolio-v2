@@ -1,0 +1,8 @@
+.project {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px;
+  transition: all 0.3s;
+}
+
+.project:hover {
+  box-shadow: rgba(33, 33, 33, 0.6) 0px 0px 20px;
+}

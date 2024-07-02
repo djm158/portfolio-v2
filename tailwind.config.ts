@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       "gray-light": "#D3D3D3",
+      brown: "#7B3218",
     },
   },
   plugins: [],
