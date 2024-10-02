@@ -21,7 +21,7 @@ const Alert = ({ preview }: Props) => {
               This page is a preview.{" "}
               <a
                 href="/api/exit-preview"
-                className="underline hover:text-teal-300 duration-200 transition-colors"
+                className="hover:text-teal-300 underline transition-colors duration-200"
               >
                 Click here
               </a>{" "}
@@ -32,7 +32,7 @@ const Alert = ({ preview }: Props) => {
               The source code for this blog is{" "}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-blue-600 duration-200 transition-colors"
+                className="hover:text-blue-600 underline transition-colors duration-200"
               >
                 available on GitHub
               </a>

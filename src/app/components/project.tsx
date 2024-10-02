@@ -18,11 +18,11 @@ const Project = ({ imgUrl, title, description, url, slug }: ProjectProps) => {
   return (
     <div
       className={cs(
-        "flex flex-col items-center w-52 h-80 hover:-translate-y-0.5 p-3 cursor-pointer",
-        styles.project
+        "flex h-80 w-52 cursor-pointer flex-col items-center p-3 hover:-translate-y-0.5",
+        styles.project,
       )}
     >
-      <div className="basis-2/3 flex flex-col justify-center items-center">
+      <div className="flex basis-2/3 flex-col items-center justify-center">
         <Image width={150} height={200} src={imgUrl} alt="project" />
       </div>
       <div className="container basis-1/3">

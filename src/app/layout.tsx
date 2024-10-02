@@ -19,7 +19,7 @@ const SidebarLink = ({
   children: ReactNode;
 }) => {
   return (
-    <a href={href} className="p-4 w-100 w-32 text-2xl">
+    <a href={href} className="w-100 w-32 p-4 text-2xl">
       {children}
     </a>
   );
@@ -27,9 +27,9 @@ const SidebarLink = ({
 
 const Sidebar = () => {
   return (
-    <div className="fixed top-0 left-0 h-full w-60 bg-gray-light p-4 hidden sm:flex sm:flex-col items-center">
+    <div className="fixed left-0 top-0 hidden h-full w-60 items-center bg-gray-light p-4 sm:flex sm:flex-col">
       <Image src="/assets/logo-medium.png" alt="Logo" width={90} height={0} />
-      <nav className="flex flex-col p-4 items-center">
+      <nav className="flex flex-col items-center p-4">
         <SidebarLink href="/">Home</SidebarLink>
         <SidebarLink href="/projects">Projects</SidebarLink>
         <SidebarLink href="/blog">Blog</SidebarLink>
@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Sidebar />
-        <div className="sm:ml-60">{children}</div>
+        <main className="p-10 sm:ml-60">{children}</main>
       </body>
     </html>
   );

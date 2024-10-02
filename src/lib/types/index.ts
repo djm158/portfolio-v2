@@ -12,7 +12,7 @@ export type Post = {
   preview?: boolean;
 };
 
-export type Author {
+export type Author = {
   name: string;
   picture: string;
 };

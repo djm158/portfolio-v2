@@ -3,8 +3,8 @@ import React from "react";
 export default function Index() {
   return (
     <main className="p-12">
-      <h1 className="text-5xl mb-4">Hello!</h1>
-      <div className="*:text-lg *:mb-3">
+      <h1 className="mb-4 text-5xl">Hello!</h1>
+      <div className="*:mb-3 *:text-lg">
         <p>I&apos;m Dan.</p>
         <p>
           I&apos;m a full stack developer at{" "}

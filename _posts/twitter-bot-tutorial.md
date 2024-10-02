@@ -125,7 +125,7 @@ function postTweet(data) {
     },
     function (err, data, response) {
       console.log(data);
-    }
+    },
   );
 }
 
@@ -222,7 +222,7 @@ function postTweet(data) {
     },
     function (err, data, response) {
       console.log(data);
-    }
+    },
   );
 }
 
