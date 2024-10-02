@@ -18,7 +18,7 @@ const SidebarLink = ({
   children: ReactNode;
 }) => {
   return (
-    <a href={href} className="p-4 w-100 w-32 text-xl">
+    <a href={href} className="p-4 w-100 w-32 text-2xl">
       {children}
     </a>
   );
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <body className={inter.className}>
       <Sidebar />
-      <div className="sm:ml-64">{children}</div>
+      <div className="sm:ml-60">{children}</div>
     </body>
   );
 }

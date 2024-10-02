@@ -3,7 +3,7 @@ import React from "react";
 export default function Index() {
   return (
     <main className="p-12">
-      <h1 className="text-4xl mb-4">Hello!</h1>
+      <h1 className="text-5xl mb-4">Hello!</h1>
       <div className="*:text-lg *:mb-3">
         <p>I&apos;m Dan.</p>
         <p>
