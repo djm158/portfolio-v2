@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 import { ReactNode } from "react";
 
@@ -26,7 +27,8 @@ const SidebarLink = ({
 
 const Sidebar = () => {
   return (
-    <div className="fixed top-0 left-0 h-full w-60 bg-gray-light p-4 hidden sm:block">
+    <div className="fixed top-0 left-0 h-full w-60 bg-gray-light p-4 hidden sm:flex sm:flex-col items-center">
+      <Image src="/assets/logo-medium.png" alt="Logo" width={90} height={0} />
       <nav className="flex flex-col p-4 items-center">
         <SidebarLink href="/">Home</SidebarLink>
         <SidebarLink href="/projects">Projects</SidebarLink>
@@ -44,9 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <body className={inter.className}>
-      <Sidebar />
-      <div className="sm:ml-60">{children}</div>
-    </body>
+    <html lang="en">
+      <body className={inter.className}>
+        <Sidebar />
+        <div className="sm:ml-60">{children}</div>
+      </body>
+    </html>
   );
 }

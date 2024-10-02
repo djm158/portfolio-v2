@@ -8,8 +8,8 @@ export default function Index() {
         <p>I&apos;m Dan.</p>
         <p>
           I&apos;m a full stack developer at{" "}
-          <a href="https://formidable.com/">NearForm (formerly Formidable)</a>{" "}
-          based in Conshohocken.
+          <a href="https://commerce.nearform.com/">NearForm</a>(formerly
+          Formidable) based in Conshohocken.
         </p>
         <p>
           I have a diverse background ranging from embedded systems to front end
